@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    color:#eee;
+    color:rgb(61, 129, 30);
     text-align: center;
 
 
@@ -12,6 +12,7 @@ html, body{
 
 .main-container{
     border: 4px solid rgb(255, 122, 0);
+    border-radius: 20px;
 
-    
+
 }
