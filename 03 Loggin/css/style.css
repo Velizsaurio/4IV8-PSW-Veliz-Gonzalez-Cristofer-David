@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+
+} 
+
+body{
+    background-image: url(../images/fondo2.jpg);
+    background-size: cover;
+    color:rgb(0,0,0);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+} 
+.userlogin{
+    background-color: rgba(255, 255, 255, 0.226);
+    height: 400px;
+    width: 400px;
+    border-radius: 15px solid rgb(154, 25, 41);
+    margin-top: 10%;
+    text-align-last: center;
+} 
+
+.tittle{
+    text-align: center;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    font-size: 15px;
+    padding-top: 30px;
+    color: aqua;
+} 
