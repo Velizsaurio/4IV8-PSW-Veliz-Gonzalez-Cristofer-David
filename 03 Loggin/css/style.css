@@ -30,3 +30,63 @@ body{
     padding-top: 30px;
     color: aqua;
 } 
+.userid{
+    padding-top: 20px;
+} 
+.userid h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    float: left;
+    margin-left: 50PX;
+    margin-right: 5px;
+    padding-left: 5px;
+} 
+.userid input{
+    height: 15px;
+    width: 300px;
+    border: solid 2px #11a34c;
+    border-radius: 10px;
+
+
+} 
+.passwordid{
+    padding-top: 20px;
+} 
+.password h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    float: left;
+    margin-left: 50PX;
+    margin-right: 5px;
+    padding-left: 5px;
+} 
+.password input{
+    height: 15px;
+    width: 200px;
+    border: solid 2px #11a34c;
+    border-radius: 10px;
+
+
+} 
+.button{
+    margin-top: 20px;
+    display: inline-block;
+
+} 
+.button p{
+    margin-top: 8px;
+    text-align: center;
+    text-transform: uppercase ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+} 
+.a{
+    margin-top: 20px;
+    float: left;
+    margin-left: 60px;
+    color: coral;
+
+}
+h5{
+    margin-top: 45PX;
+    font-size: 15px;
+
+}   
