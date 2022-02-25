@@ -1,19 +1,29 @@
 
 /*
-vamos a crear una funcion que se encargue de validar
-que el usuario deba de escribir mas de 5 caracteres
-en el campo nombre
-*/
+Java script es un lenguaje que posee un paradigma
+orientado a objetos y a funciones, por tal motivo
+presenta una particular la cual es 
+
+NO TIPADO
+
+no existe int, double, float, string, etc
+
+Dentro de JS, todo es y una var ->  Variable
+
+De acuerdo al estandar de ES6 se manejan 3 tipos de variables
+
+VAR
+LET es una variable de tipo protected
+CONST
+ */
 
 function validar(formulario){
     //obtener los valores del formulario
     if(formulario.nombre.value.length < 5){
-        alert("Escribe mas de 5 caracteres en el campo nombre");
+        alert("Escribe por lo menos 5 caracteres en el campo nombre");
         formulario.nombre.focus();
     return false;
     }
-
-
     /*
     vamos a crear una opcion para que solo se pueda ingresar
     letras dentro del campo nombre
@@ -24,21 +34,22 @@ function validar(formulario){
 
     var checkStr = formulario.nombre.value;
 
-    var allvalid = true;
+    var allValido = true;
 
     for(var i = 0; i < checkStr.length; i++){
         var ch = checkStr.charAt(i);
-        for(var j = 0; j < checkOK.length; j++)
-        if(ch == checkOK.charAt(j))
-            break;
-        if(j == checkOK.length){
-            allvalid = false;
+        for(var j = 0; j < checkOK.length; j++){
+            if(ch == checkOK.charAt(j))
             break;
         }
+        if(j == checkOK.length){
+            allValido = false;
+            break;
+       }
     }
 
-    if(!allvalid){
-        alert("Escribe solo letras en el campo nombre");
+    if(!allValido){
+        alert("Escribe unicamente letras en el campo nombre");
         formulario.nombre.focus();
         return false;
     }
