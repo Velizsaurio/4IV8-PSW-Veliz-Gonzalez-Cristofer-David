@@ -45,8 +45,8 @@ function validar(formulario){
         if(j == checkOK.length){
             allValido = false;
             break;
+        }
        }
-    }
 
     if(!allValido){
         alert("Escribe unicamente letras en el campo nombre");
@@ -82,8 +82,9 @@ function validar(formulario){
         formulario.edad.focus();
         return false;
     }
+}
 
-    /*
+  /*
     hay que validar la entrada de un correo electronico
     algo@algo.algo
     algo.algo@algo.algo.algo
@@ -99,4 +100,3 @@ function validar(formulario){
     alert("Email " + (b.test(txt)?"":" no ")+" valido");
 
     return b.test(txt);
-}
