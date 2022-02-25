@@ -64,7 +64,7 @@ function validar(formulario){
 
     var checkStr = formulario.edad.value;
 
-    var allvalid = true;
+    var allValid = true;
 
     for(var i = 0; i < checkStr.length; i++){
         var ch = checkStr.charAt(i);
@@ -72,17 +72,17 @@ function validar(formulario){
         if(ch == checkOK.charAt(j))
             break;
         if(j == checkOK.length){
-            allvalid = false;
+            allValid = false;
             break;
         }
     }
 
-    if(!allvalid){
+    if(!allValid){
         alert("Escribe solo numeros en el campo edad");
         formulario.edad.focus();
         return false;
     }
-}
+
 
   /*
     hay que validar la entrada de un correo electronico
@@ -95,8 +95,9 @@ function validar(formulario){
     var txt = formulario.email.value;
 
     //patron
-    var b = /^[^@\s]+@[^@\.\s]+(\.[^@\.\s]+)+$/;
+    var b = /^[^@\s]+[^@\.\s]+(\.[^@\.\s]+)+$/;
 
-    alert("Email " + (b.test(txt)?"":" no ")+" valido");
+    alert("Email " + (b.test(txt)?" ":"no")+" valido");
 
-    return b.test(txt);
+    return b.test;
+}
