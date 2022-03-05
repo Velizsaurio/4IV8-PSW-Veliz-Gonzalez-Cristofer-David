@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <title>examen</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <center><h1>Calculo del precio final</h1></center>
+    </header>
+    <div class="container-form">
+        <form method="post" name="formulario" 
+        onsubmit= return "validar(this)" action="">
+            <br>
+            <p>
+                <br>
+                <label for="costoCarro">Costo del vehiculo</label>
+                <input type="text" name="" id="costoCarro">
+                <br><br>
+                <label for="cuotaInicial">Pagoinicial</label>
+                <input type="text" id="cuotaInicial">
+                <br><br>
+                <label for="periodo">Periodo </label>
+                <select name="select">
+                    <option value="3">3</option>
+                    <option value="6">6</option>
+                    <option value="9">9</option>
+                    <option value="12">12</option>
+                    <option value="18">18</option>
+                </select>
+                <label for="periodo"> meses</label>
+                <br><br>
+            </p>
+            <input type="reset" name="Calcular" value="Calcular" id="Calcular">
+        </form>
+    </div>
+    <div>
+        <table id="lista-tabla" class="table">
+                <tr>
+                    <td class="monto">Monto total</td>   
+                    <td id="montoTotal" class="pagar"></td>
+                </tr>
+                <tr>
+                    <td class="pagar">Monto pagado</td>
+                    <td id="montoPagado" class="monto"></td>
+                </tr>
+                <tr>
+                    <td class="monto">Monto pendiente</td>
+                    <td id="montoPendiente" class="pagar"></td>
+                </tr>
+                <tr>
+                    <td class="pagar">Plazo en meses</td>
+                    <td id="plazoMeses" class="monto"></td>
+                </tr>
+                <tr>
+                    <td class="monto">Taza de interés</td>
+                    <td id="tazaInteres" class="pagar"></td>
+                </tr>
+                <tr>
+                    <td class="pagar">Capital futuro</td>
+                    <td id="capitalFuturo" class="monto"></td>
+                </tr>
+        </table>
+    </div>
+    <footer>
+        <center><h4>Veliz Gonzalez Cristofer David 4IV8</h4></center>
+    </footer>
+    <script src="/js/hacertablas.js"></script>
+</body>
+</html>

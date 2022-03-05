@@ -1,0 +1,6 @@
+#columnas{
+	column-count:4;
+	column-gap:20px;
+	column-rule:4px dotted rgb(1, 255, 128);
+ }
+ 
